@@ -190,6 +190,7 @@ a:hover { color: #a78bfa; }
 
 /* Language picker */
 .lang {
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -219,7 +220,49 @@ a:hover { color: #a78bfa; }
   padding: 0;
   max-width: 12rem;
 }
-.lang-select:focus { outline: none; }
+.lang-picker { position: relative; }
+.lang-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 9rem;
+  text-align: left;
+}
+.lang-trigger:focus { outline: none; }
+.lang-chevron { margin-left: auto; font-size: .8rem; color: var(--color-text-muted); }
+.lang-menu {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 8px);
+  right: 0;
+  width: max-content;
+  min-width: 100%;
+  max-height:  min(26rem, 70vh);
+  overflow-y: auto;
+  padding: 5px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+}
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  padding: 7px 9px;
+  border: 0;
+  border-radius: 4px;
+  color: var(--color-text);
+  background: transparent;
+  font: inherit;
+  font-size: .85rem;
+  text-align: left;
+  cursor: pointer;
+}
+.lang-option:hover, .lang-option[aria-selected="true"] { background: var(--color-accent-soft); }
+.lang-option:focus-visible { outline: 2px solid var(--color-accent-light); outline-offset: -2px; }
+.lang-option .fi, .lang-trigger .fi { flex: none; }
 .lang-select option {
   background: var(--color-bg-card);
   color: var(--color-text);
@@ -850,4 +893,38 @@ a:hover { color: #a78bfa; }
 .brand-name {
   unicode-bidi: isolate;
 }
+
+/* The app uses these 21 locale flags; keep the full flag-icons package out of
+ * the bundle so unused country SVGs are not emitted. */
+.fi {
+  display: inline-block;
+  width: 1.333333em;
+  line-height: 1em;
+  aspect-ratio: 4 / 3;
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.fi:before { content: "\00a0"; }
+.fi-us { background-image: url(912cb4a8f30b24032f0d.svg); }
+.fi-cn { background-image: url(e4f6436aa2c562521a6e.svg); }
+.fi-in { background-image: url(12c66a162687c5c17ea4.svg); }
+.fi-es { background-image: url(c2bea6d740c5d81d5bce.svg); }
+.fi-sa { background-image: url(b26b19034a77a3b4b09a.svg); }
+.fi-bd { background-image: url(0ad8c443ef4d47ea0497.svg); }
+.fi-br { background-image: url(c2d9921ea1d1b06c26da.svg); }
+.fi-ru { background-image: url(097b629d57d4188b9b83.svg); }
+.fi-jp { background-image: url(d288d548026f04523965.svg); }
+.fi-de { background-image: url(adc6c9b3594fb2f4a4df.svg); }
+.fi-fr { background-image: url(0313c7eacb9633130ffb.svg); }
+.fi-pk { background-image: url(d6091ce69832a5070cf9.svg); }
+.fi-id { background-image: url(f624e2c8444a7794b357.svg); }
+.fi-tr { background-image: url(535c328e67d2cd262543.svg); }
+.fi-it { background-image: url(08db2cd122d5f99494dd.svg); }
+.fi-kr { background-image: url(cb52920205a3904b12e9.svg); }
+.fi-vn { background-image: url(e80173a9c3cbaa60c593.svg); }
+.fi-ir { background-image: url(c14862b9a48216f75d15.svg); }
+.fi-pl { background-image: url(2b5541c54505328dbc1b.svg); }
+.fi-nl { background-image: url(874fbf1b360bed6592fc.svg); }
+.fi-th { background-image: url(d3dea0cee87c83e3a1e6.svg); }
 
