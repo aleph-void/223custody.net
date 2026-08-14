@@ -17,3 +17,11 @@ const i18n = createI18n({
 registerI18n(i18n)
 
 createApp(App).use(i18n).mount('#app')
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch(() => {
+      // Offline support is progressive; the app still works without a worker.
+    })
+  })
+}
