@@ -242,6 +242,7 @@
           <a href="#tool">{{ $t('nav.check') }}</a>
           <a href="#how-it-works">{{ $t('nav.how') }}</a>
           <a href="https://alephvoid.com" target="_blank" rel="noopener">{{ $t('nav.alephvoid') }}</a>
+          <a href="https://github.com/aleph-void/223custody.net" target="_blank" rel="noopener">GitHub</a>
         </div>
         <p class="footer-copy">
           <i18n-t keypath="footer.copy" scope="global">
