@@ -2,7 +2,7 @@
 <!-- Navigation -->
   <nav id="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-brand">
+      <a href="/" class="nav-brand">
         <svg class="nav-logo" viewBox="0 0 32 32" aria-hidden="true">
           <rect width="32" height="32" rx="7" fill="#6d28d9"/>
           <rect x="6" y="9" width="7" height="6" rx="1.5" fill="#c4b5fd"/>
