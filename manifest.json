@@ -1,0 +1,26 @@
+{
+  "id": "/",
+  "name": "2-2-3 Calendar",
+  "short_name": "2-2-3 Calendar",
+  "description": "Find out whether the kids are with you on any date under a 2-2-3 custody rotation.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a0a0f",
+  "theme_color": "#0a0a0f",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
