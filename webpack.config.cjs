@@ -31,7 +31,9 @@ module.exports = (env, argv) => {
         {
           test: /\.css$/,
           use: [
-            isProd ? MiniCssExtractPlugin.loader : 'style-loader',
+            isProd
+              ? { loader: MiniCssExtractPlugin.loader, options: { publicPath: '../' } }
+              : 'style-loader',
             { loader: 'css-loader', options: { importLoaders: 1 } }
           ]
         }
