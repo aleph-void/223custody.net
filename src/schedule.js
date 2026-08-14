@@ -3,8 +3,8 @@
  * The cycle is 14 days. Anchored on a Monday that starts a week in which YOU
  * have Mon + Tue, the whole thing is fixed:
  *
- *   week 1:  Mon You  Tue You  Wed Her  Thu Her  Fri You  Sat You  Sun You
- *   week 2:  Mon Her  Tue Her  Wed You  Thu You  Fri Her  Sat Her  Sun Her
+ *   week 1:  Mon You  Tue You  Wed Other  Thu Other  Fri You  Sat You  Sun You
+ *   week 2:  Mon Other  Tue Other  Wed You  Thu You  Fri Other  Sat Other  Sun Other
  *
  * Each date is counted as an overnight, so a Friday-through-Monday-morning
  * weekend covers Fri/Sat/Sun and hands off on the Monday that opens week 2.

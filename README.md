@@ -19,8 +19,8 @@ cycle is fixed:
 
 | Week | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 |------|-----|-----|-----|-----|-----|-----|-----|
-| 1 | You | You | Her | Her | You | You | You |
-| 2 | Her | Her | You | You | Her | Her | Her |
+| 1 | You | You | Other | Other | You | You | You |
+| 2 | Other | Other | You | You | Other | Other | Other |
 
 Each date counts as an **overnight**, so a Friday-through-Monday-morning
 weekend covers Fri/Sat/Sun and the handoff Monday belongs to the parent whose
