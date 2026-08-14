@@ -27,7 +27,7 @@ export default {
   choice: {
     pair: '{a} و {b}',
     montueSub: 'این آخر هفته هم مال شماست — از جمعه تا صبح دوشنبه.',
-    wedthuSub: 'این آخر هفته مال مادرشان است — از جمعه تا صبح دوشنبه.'
+    wedthuSub: 'این آخر هفته مال والد دیگر است — از جمعه تا صبح دوشنبه.'
   },
   step2: {
     num: 'گام ۲',
@@ -49,27 +49,27 @@ export default {
     yes: 'بله',
     no: 'خیر',
     withYou: 'آن شب بچه‌ها پیش شما هستند.',
-    withThem: 'آن شب بچه‌ها پیش مادرشان هستند.',
+    withThem: 'آن شب بچه‌ها پیش والد دیگر هستند.',
     stretchLabel: 'این دوره',
     cycleLabel: 'جایگاه در چرخه',
     nextLabel: 'تحویل بعدی',
     range: '{from} – {to}',
     stretchYou: 'پیش شما: {span} ({nights})',
-    stretchThem: 'پیش مادرشان: {span} ({nights})',
+    stretchThem: 'پیش والد دیگر: {span} ({nights})',
     nights: {
       one: '{n} شب',
       other: '{n} شب'
     },
     cycle: 'روز {day} از ۱۴ — هفتهٔ {week}، {weekday}',
-    nextToThem: 'صبح {date} — نزد مادرشان می‌روند',
+    nextToThem: 'صبح {date} — نزد والد دیگر می‌روند',
     nextToYou: 'صبح {date} — نزد شما می‌آیند',
     prevMonth: 'ماه پیش',
     nextMonth: 'ماه بعد',
     legendYou: 'پیش شما',
-    legendThem: 'پیش مادرشان',
+    legendThem: 'پیش والد دیگر',
     legendTarget: 'تاریخ بررسی‌شده',
     cellYou: '{date} — پیش شما',
-    cellThem: '{date} — پیش مادرشان'
+    cellThem: '{date} — پیش والد دیگر'
   },
   share: {
     button: 'کپی کردن پیوند',
@@ -86,7 +86,7 @@ export default {
     week1: 'هفتهٔ ۱ — سهم شما: {pair}',
     week2: 'هفتهٔ ۲ — همه‌چیز وارونه می‌شود',
     you: 'شما',
-    mother: 'مادر',
+    otherParent: 'والد دیگر',
     note1Title: 'روزها بر پایهٔ شب‌ها شمرده می‌شوند',
     note1Body: 'هر تاریخ به کسی تعلق دارد که بچه‌ها آن شب نزد او می‌مانند. آخر هفتهٔ جمعه تا یکشنبه با تحویل صبح دوشنبه پایان می‌یابد، پس آن دوشنبه به حساب کسی نوشته می‌شود که دوره‌اش آغاز می‌شود.',
     note2Title: 'هفته از دوشنبه آغاز می‌شود',

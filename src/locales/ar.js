@@ -27,7 +27,7 @@ export default {
   choice: {
     pair: '{a} و{b}',
     montueSub: 'عطلة نهاية هذا الأسبوع لك أيضًا — من الجمعة حتى صباح الاثنين.',
-    wedthuSub: 'عطلة نهاية هذا الأسبوع لوالدتهم — من الجمعة حتى صباح الاثنين.'
+    wedthuSub: 'عطلة نهاية هذا الأسبوع للوالد الآخر — من الجمعة حتى صباح الاثنين.'
   },
   step2: {
     num: 'الخطوة 2',
@@ -49,13 +49,13 @@ export default {
     yes: 'نعم',
     no: 'لا',
     withYou: 'في تلك الليلة يكون الأطفال عندك.',
-    withThem: 'في تلك الليلة يكون الأطفال عند والدتهم.',
+    withThem: 'في تلك الليلة يكون الأطفال عند الوالد الآخر.',
     stretchLabel: 'هذه الفترة',
     cycleLabel: 'الموضع في الدورة',
     nextLabel: 'التسليم التالي',
     range: '{from} – {to}',
     stretchYou: 'عندك: {span} ({nights})',
-    stretchThem: 'عند والدتهم: {span} ({nights})',
+    stretchThem: 'عند الوالد الآخر: {span} ({nights})',
     nights: {
       zero: '{n} ليلة',
       one: 'ليلة واحدة',
@@ -65,15 +65,15 @@ export default {
       other: '{n} ليلة'
     },
     cycle: 'اليوم {day} من 14 — الأسبوع {week}، {weekday}',
-    nextToThem: 'صباح {date} — ينتقلون إلى والدتهم',
+    nextToThem: 'صباح {date} — ينتقلون إلى الوالد الآخر',
     nextToYou: 'صباح {date} — ينتقلون إليك',
     prevMonth: 'الشهر السابق',
     nextMonth: 'الشهر التالي',
     legendYou: 'عندك',
-    legendThem: 'عند والدتهم',
+    legendThem: 'عند الوالد الآخر',
     legendTarget: 'التاريخ الذي تحققت منه',
     cellYou: '{date} — عندك',
-    cellThem: '{date} — عند والدتهم'
+    cellThem: '{date} — عند الوالد الآخر'
   },
   share: {
     button: 'نسخ رابط المشاركة',
@@ -90,7 +90,7 @@ export default {
     week1: 'الأسبوع 1 — كان لك {pair}',
     week2: 'الأسبوع 2 — ينقلب كل شيء',
     you: 'أنت',
-    mother: 'الأم',
+    otherParent: 'الوالد الآخر',
     note1Title: 'تُحسب الأيام بالمبيت',
     note1Body: 'التاريخ يعود لمن يبيت الأطفال عنده تلك الليلة. عطلة نهاية الأسبوع من الجمعة إلى الأحد تنتهي بالتسليم صباح الاثنين، فيُحسب ذلك الاثنين لمن تبدأ فترته.',
     note2Title: 'يبدأ الأسبوع يوم الاثنين',

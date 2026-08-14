@@ -27,7 +27,7 @@ export default {
   choice: {
     pair: '{a} и {b}',
     montueSub: 'Эти выходные тоже ваши — с пятницы до утра понедельника.',
-    wedthuSub: 'Эти выходные у мамы — с пятницы до утра понедельника.'
+    wedthuSub: 'Эти выходные у другого родителя — с пятницы до утра понедельника.'
   },
   step2: {
     num: 'Шаг 2',
@@ -49,13 +49,13 @@ export default {
     yes: 'Да',
     no: 'Нет',
     withYou: 'В эту ночь дети у вас.',
-    withThem: 'В эту ночь дети у мамы.',
+    withThem: 'В эту ночь дети у другого родителя.',
     stretchLabel: 'Текущий блок',
     cycleLabel: 'Позиция в цикле',
     nextLabel: 'Следующая передача',
     range: '{from} → {to}',
     stretchYou: 'У вас: {span} ({nights})',
-    stretchThem: 'У мамы: {span} ({nights})',
+    stretchThem: 'У другого родителя: {span} ({nights})',
     nights: {
       one: '{n} ночь',
       few: '{n} ночи',
@@ -63,15 +63,15 @@ export default {
       other: '{n} ночи'
     },
     cycle: 'День {day} из 14 — неделя {week}, {weekday}',
-    nextToThem: '{date} утром — уезжают к маме',
+    nextToThem: '{date} утром — уезжают к другому родителю',
     nextToYou: '{date} утром — приезжают к вам',
     prevMonth: 'Предыдущий месяц',
     nextMonth: 'Следующий месяц',
     legendYou: 'У вас',
-    legendThem: 'У мамы',
+    legendThem: 'У другого родителя',
     legendTarget: 'Проверяемая дата',
     cellYou: '{date} — у вас',
-    cellThem: '{date} — у мамы'
+    cellThem: '{date} — у другого родителя'
   },
   share: {
     button: 'Скопировать ссылку',
@@ -88,7 +88,7 @@ export default {
     week1: 'Неделя 1 — у вас были {pair}',
     week2: 'Неделя 2 — всё переворачивается',
     you: 'Вы',
-    mother: 'Мама',
+    otherParent: 'Другой родитель',
     note1Title: 'Дни считаются по ночёвкам',
     note1Body: 'Дата принадлежит тому, у кого дети ночуют. Выходные с пятницы по воскресенье заканчиваются передачей в понедельник утром, поэтому этот понедельник засчитывается родителю, чей блок начинается.',
     note2Title: 'Неделя начинается с понедельника',

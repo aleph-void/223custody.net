@@ -27,7 +27,7 @@ export default {
   choice: {
     pair: '{a} 和 {b}',
     montueSub: '这个周末也归你——从周五到周一早上。',
-    wedthuSub: '这个周末归孩子妈妈——从周五到周一早上。'
+    wedthuSub: '这个周末归另一位家长——从周五到周一早上。'
   },
   step2: {
     num: '第 2 步',
@@ -49,26 +49,26 @@ export default {
     yes: '在',
     no: '不在',
     withYou: '那天晚上孩子在你这里。',
-    withThem: '那天晚上孩子在妈妈那里。',
+    withThem: '那天晚上孩子在另一位家长那里。',
     stretchLabel: '本段',
     cycleLabel: '周期位置',
     nextLabel: '下次交接',
     range: '{from} → {to}',
     stretchYou: '在你这里：{span}（{nights}）',
-    stretchThem: '在妈妈那里：{span}（{nights}）',
+    stretchThem: '在另一位家长那里：{span}（{nights}）',
     nights: {
       other: '{n} 晚'
     },
     cycle: '第 {day} 天／共 14 天 — 第 {week} 周，{weekday}',
-    nextToThem: '{date}早上——送回妈妈那里',
+    nextToThem: '{date}早上——送到另一位家长那里',
     nextToYou: '{date}早上——接到你这里',
     prevMonth: '上个月',
     nextMonth: '下个月',
     legendYou: '在你这里',
-    legendThem: '在妈妈那里',
+    legendThem: '在另一位家长那里',
     legendTarget: '所查询的日期',
     cellYou: '{date} — 在你这里',
-    cellThem: '{date} — 在妈妈那里'
+    cellThem: '{date} — 在另一位家长那里'
   },
   share: {
     button: '复制分享链接',
@@ -85,7 +85,7 @@ export default {
     week1: '第 1 周 — 你带的是 {pair}',
     week2: '第 2 周 — 全部对调',
     you: '你',
-    mother: '妈妈',
+    otherParent: '另一位家长',
     note1Title: '按过夜计算',
     note1Body: '一个日期属于当晚陪着孩子的一方。周五到周日的周末在周一早上送回时结束，因此那个周一算给开启下一段的一方。',
     note2Title: '一周从周一开始',

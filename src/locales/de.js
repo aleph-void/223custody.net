@@ -27,7 +27,7 @@ export default {
   choice: {
     pair: '{a} & {b}',
     montueSub: 'Dieses Wochenende gehört ebenfalls Ihnen — von Freitag bis Montagmorgen.',
-    wedthuSub: 'Dieses Wochenende gehört der Mutter — von Freitag bis Montagmorgen.'
+    wedthuSub: 'Dieses Wochenende gehört dem anderen Elternteil — von Freitag bis Montagmorgen.'
   },
   step2: {
     num: 'Schritt 2',
@@ -49,27 +49,27 @@ export default {
     yes: 'Ja',
     no: 'Nein',
     withYou: 'In dieser Nacht sind die Kinder bei Ihnen.',
-    withThem: 'In dieser Nacht sind die Kinder bei ihrer Mutter.',
+    withThem: 'In dieser Nacht sind die Kinder beim anderen Elternteil.',
     stretchLabel: 'Dieser Block',
     cycleLabel: 'Position im Zyklus',
     nextLabel: 'Nächster Wechsel',
     range: '{from} → {to}',
     stretchYou: 'Bei Ihnen: {span} ({nights})',
-    stretchThem: 'Bei der Mutter: {span} ({nights})',
+    stretchThem: 'Beim anderen Elternteil: {span} ({nights})',
     nights: {
       one: '{n} Nacht',
       other: '{n} Nächte'
     },
     cycle: 'Tag {day} von 14 — Woche {week}, {weekday}',
-    nextToThem: '{date} früh — sie gehen zu ihrer Mutter',
+    nextToThem: '{date} früh — sie gehen zum anderen Elternteil',
     nextToYou: '{date} früh — sie kommen zu Ihnen',
     prevMonth: 'Vorheriger Monat',
     nextMonth: 'Nächster Monat',
     legendYou: 'Bei Ihnen',
-    legendThem: 'Bei der Mutter',
+    legendThem: 'Beim anderen Elternteil',
     legendTarget: 'Geprüftes Datum',
     cellYou: '{date} — bei Ihnen',
-    cellThem: '{date} — bei der Mutter'
+    cellThem: '{date} — beim anderen Elternteil'
   },
   share: {
     button: 'Link kopieren',
@@ -86,7 +86,7 @@ export default {
     week1: 'Woche 1 — Sie hatten {pair}',
     week2: 'Woche 2 — alles dreht sich um',
     you: 'Sie',
-    mother: 'Mutter',
+    otherParent: 'Anderer Elternteil',
     note1Title: 'Gezählt werden Übernachtungen',
     note1Body: 'Ein Datum gehört dem, bei dem die Kinder in dieser Nacht schlafen. Ein Wochenende von Freitag bis Sonntag endet bei der Übergabe am Montagmorgen; dieser Montag zählt also für den Elternteil, dessen Block beginnt.',
     note2Title: 'Wochen beginnen am Montag',

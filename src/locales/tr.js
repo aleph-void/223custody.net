@@ -27,7 +27,7 @@ export default {
   choice: {
     pair: '{a} ve {b}',
     montueSub: 'Bu hafta sonu da sizin — cumadan pazartesi sabahına kadar.',
-    wedthuSub: 'Bu hafta sonu annelerinde — cumadan pazartesi sabahına kadar.'
+    wedthuSub: 'Bu hafta sonu diğer ebeveynde — cumadan pazartesi sabahına kadar.'
   },
   step2: {
     num: 'Adım 2',
@@ -49,27 +49,27 @@ export default {
     yes: 'Evet',
     no: 'Hayır',
     withYou: 'O gece çocuklar sizde.',
-    withThem: 'O gece çocuklar annelerinde.',
+    withThem: 'O gece çocuklar diğer ebeveynde.',
     stretchLabel: 'Bu blok',
     cycleLabel: 'Döngüdeki yeri',
     nextLabel: 'Sonraki devir',
     range: '{from} → {to}',
     stretchYou: 'Sizde: {span} ({nights})',
-    stretchThem: 'Annelerinde: {span} ({nights})',
+    stretchThem: 'Diğer ebeveynde: {span} ({nights})',
     nights: {
       one: '{n} gece',
       other: '{n} gece'
     },
     cycle: '14 günün {day}. günü — {week}. hafta, {weekday}',
-    nextToThem: '{date} sabahı — annelerine gidiyorlar',
+    nextToThem: '{date} sabahı — diğer ebeveyne gidiyorlar',
     nextToYou: '{date} sabahı — size geliyorlar',
     prevMonth: 'Önceki ay',
     nextMonth: 'Sonraki ay',
     legendYou: 'Sizde',
-    legendThem: 'Annelerinde',
+    legendThem: 'Diğer ebeveynde',
     legendTarget: 'Sorgulanan tarih',
     cellYou: '{date} — sizde',
-    cellThem: '{date} — annelerinde'
+    cellThem: '{date} — diğer ebeveynde'
   },
   share: {
     button: 'Bağlantıyı kopyala',
@@ -86,7 +86,7 @@ export default {
     week1: '1. hafta — sizdeydi: {pair}',
     week2: '2. hafta — her şey tersine döner',
     you: 'Siz',
-    mother: 'Anne',
+    otherParent: 'Diğer ebeveyn',
     note1Title: 'Günler geceleme olarak sayılır',
     note1Body: 'Bir tarih, çocukların o gece kimde kaldığına aittir. Cumadan pazara süren hafta sonu pazartesi sabahı teslimle biter; dolayısıyla o pazartesi, bloğu başlatan ebeveyne sayılır.',
     note2Title: 'Haftalar pazartesi başlar',

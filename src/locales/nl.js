@@ -27,7 +27,7 @@ export default {
   choice: {
     pair: '{a} en {b}',
     montueSub: 'Dit weekend is ook van jou — van vrijdag tot maandagochtend.',
-    wedthuSub: 'Dit weekend is van hun moeder — van vrijdag tot maandagochtend.'
+    wedthuSub: 'Dit weekend is van de andere ouder — van vrijdag tot maandagochtend.'
   },
   step2: {
     num: 'Stap 2',
@@ -49,27 +49,27 @@ export default {
     yes: 'Ja',
     no: 'Nee',
     withYou: 'Die nacht zijn de kinderen bij jou.',
-    withThem: 'Die nacht zijn de kinderen bij hun moeder.',
+    withThem: 'Die nacht zijn de kinderen bij de andere ouder.',
     stretchLabel: 'Dit blok',
     cycleLabel: 'Positie in de cyclus',
     nextLabel: 'Volgende wissel',
     range: '{from} → {to}',
     stretchYou: 'Bij jou: {span} ({nights})',
-    stretchThem: 'Bij hun moeder: {span} ({nights})',
+    stretchThem: 'Bij de andere ouder: {span} ({nights})',
     nights: {
       one: '{n} nacht',
       other: '{n} nachten'
     },
     cycle: 'Dag {day} van 14 — week {week}, {weekday}',
-    nextToThem: '{date} ochtend — ze gaan naar hun moeder',
+    nextToThem: '{date} ochtend — ze gaan naar de andere ouder',
     nextToYou: '{date} ochtend — ze komen naar jou',
     prevMonth: 'Vorige maand',
     nextMonth: 'Volgende maand',
     legendYou: 'Bij jou',
-    legendThem: 'Bij hun moeder',
+    legendThem: 'Bij de andere ouder',
     legendTarget: 'Gecontroleerde datum',
     cellYou: '{date} — bij jou',
-    cellThem: '{date} — bij hun moeder'
+    cellThem: '{date} — bij de andere ouder'
   },
   share: {
     button: 'Link kopiëren',
@@ -86,7 +86,7 @@ export default {
     week1: 'Week 1 — jij had {pair}',
     week2: 'Week 2 — alles keert om',
     you: 'Jij',
-    mother: 'Moeder',
+    otherParent: 'Andere ouder',
     note1Title: 'Dagen tellen als overnachtingen',
     note1Body: 'Een datum hoort bij wie de kinderen die nacht heeft. Een weekend van vrijdag tot zondag eindigt bij het brengen op maandagochtend, dus die maandag telt voor de ouder wiens blok begint.',
     note2Title: 'Weken beginnen op maandag',

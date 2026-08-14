@@ -27,7 +27,7 @@ export default {
   choice: {
     pair: '{a} e {b}',
     montueSub: 'Anche questo fine settimana è tuo — dal venerdì al lunedì mattina.',
-    wedthuSub: 'Questo fine settimana è della madre — dal venerdì al lunedì mattina.'
+    wedthuSub: 'Questo fine settimana è dell’altro genitore — dal venerdì al lunedì mattina.'
   },
   step2: {
     num: 'Passo 2',
@@ -49,27 +49,27 @@ export default {
     yes: 'Sì',
     no: 'No',
     withYou: 'Quella notte i bambini sono con te.',
-    withThem: 'Quella notte i bambini sono con la madre.',
+    withThem: 'Quella notte i bambini sono con l’altro genitore.',
     stretchLabel: 'Questo blocco',
     cycleLabel: 'Posizione nel ciclo',
     nextLabel: 'Prossimo cambio',
     range: '{from} → {to}',
     stretchYou: 'Con te: {span} ({nights})',
-    stretchThem: 'Con la madre: {span} ({nights})',
+    stretchThem: 'Con l’altro genitore: {span} ({nights})',
     nights: {
       one: '{n} notte',
       other: '{n} notti'
     },
     cycle: 'Giorno {day} di 14 — settimana {week}, {weekday}',
-    nextToThem: '{date} mattina — passano dalla madre',
+    nextToThem: '{date} mattina — passano dall’altro genitore',
     nextToYou: '{date} mattina — passano da te',
     prevMonth: 'Mese precedente',
     nextMonth: 'Mese successivo',
     legendYou: 'Con te',
-    legendThem: 'Con la madre',
+    legendThem: 'Con l’altro genitore',
     legendTarget: 'Data verificata',
     cellYou: '{date} — con te',
-    cellThem: '{date} — con la madre'
+    cellThem: '{date} — con l’altro genitore'
   },
   share: {
     button: 'Copia il link',
@@ -86,7 +86,7 @@ export default {
     week1: 'Settimana 1 — hai avuto {pair}',
     week2: 'Settimana 2 — tutto si inverte',
     you: 'Tu',
-    mother: 'Madre',
+    otherParent: 'Altro genitore',
     note1Title: 'I giorni si contano come notti',
     note1Body: 'Una data appartiene a chi ha i bambini quella notte. Un fine settimana da venerdì a domenica finisce con la riconsegna del lunedì mattina, quindi quel lunedì conta per il genitore che apre il blocco.',
     note2Title: 'Le settimane iniziano di lunedì',

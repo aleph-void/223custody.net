@@ -27,7 +27,7 @@ export default {
   choice: {
     pair: '{a} e {b}',
     montueSub: 'Este fim de semana também é seu — de sexta até segunda de manhã.',
-    wedthuSub: 'Este fim de semana é da mãe — de sexta até segunda de manhã.'
+    wedthuSub: 'Este fim de semana é do outro progenitor — de sexta até segunda de manhã.'
   },
   step2: {
     num: 'Passo 2',
@@ -49,28 +49,28 @@ export default {
     yes: 'Sim',
     no: 'Não',
     withYou: 'Nessa noite as crianças estão com você.',
-    withThem: 'Nessa noite as crianças estão com a mãe.',
+    withThem: 'Nessa noite as crianças estão com o outro progenitor.',
     stretchLabel: 'Este bloco',
     cycleLabel: 'Posição no ciclo',
     nextLabel: 'Próxima troca',
     range: '{from} → {to}',
     stretchYou: 'Com você: {span} ({nights})',
-    stretchThem: 'Com a mãe: {span} ({nights})',
+    stretchThem: 'Com o outro progenitor: {span} ({nights})',
     nights: {
       one: '{n} noite',
       many: '{n} noites',
       other: '{n} noites'
     },
     cycle: 'Dia {day} de 14 — semana {week}, {weekday}',
-    nextToThem: '{date} de manhã — vão para a mãe',
+    nextToThem: '{date} de manhã — vão para o outro progenitor',
     nextToYou: '{date} de manhã — vêm para você',
     prevMonth: 'Mês anterior',
     nextMonth: 'Próximo mês',
     legendYou: 'Com você',
-    legendThem: 'Com a mãe',
+    legendThem: 'Com o outro progenitor',
     legendTarget: 'Data consultada',
     cellYou: '{date} — com você',
-    cellThem: '{date} — com a mãe'
+    cellThem: '{date} — com o outro progenitor'
   },
   share: {
     button: 'Copiar link',
@@ -87,7 +87,7 @@ export default {
     week1: 'Semana 1 — você ficou com {pair}',
     week2: 'Semana 2 — tudo se inverte',
     you: 'Você',
-    mother: 'Mãe',
+    otherParent: 'Outro progenitor',
     note1Title: 'Os dias são contados como pernoites',
     note1Body: 'Uma data pertence a quem fica com as crianças naquela noite. Um fim de semana de sexta a domingo termina na entrega de segunda de manhã, então essa segunda conta para quem inicia o bloco seguinte.',
     note2Title: 'As semanas começam na segunda',

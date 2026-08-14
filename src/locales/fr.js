@@ -27,7 +27,7 @@ export default {
   choice: {
     pair: '{a} et {b}',
     montueSub: 'Ce week-end est aussi le vôtre — du vendredi au lundi matin.',
-    wedthuSub: 'Ce week-end est celui de leur mère — du vendredi au lundi matin.'
+    wedthuSub: 'Ce week-end est celui de l’autre parent — du vendredi au lundi matin.'
   },
   step2: {
     num: 'Étape 2',
@@ -49,28 +49,28 @@ export default {
     yes: 'Oui',
     no: 'Non',
     withYou: 'Cette nuit-là, les enfants sont chez vous.',
-    withThem: 'Cette nuit-là, les enfants sont chez leur mère.',
+    withThem: 'Cette nuit-là, les enfants sont chez l’autre parent.',
     stretchLabel: 'Cette période',
     cycleLabel: 'Position dans le cycle',
     nextLabel: 'Prochain relais',
     range: '{from} → {to}',
     stretchYou: 'Chez vous : {span} ({nights})',
-    stretchThem: 'Chez leur mère : {span} ({nights})',
+    stretchThem: 'Chez l’autre parent : {span} ({nights})',
     nights: {
       one: '{n} nuit',
       many: '{n} nuits',
       other: '{n} nuits'
     },
     cycle: 'Jour {day} sur 14 — semaine {week}, {weekday}',
-    nextToThem: '{date} au matin — ils partent chez leur mère',
+    nextToThem: '{date} au matin — ils partent chez l’autre parent',
     nextToYou: '{date} au matin — ils arrivent chez vous',
     prevMonth: 'Mois précédent',
     nextMonth: 'Mois suivant',
     legendYou: 'Chez vous',
-    legendThem: 'Chez leur mère',
+    legendThem: 'Chez l’autre parent',
     legendTarget: 'Date vérifiée',
     cellYou: '{date} — chez vous',
-    cellThem: '{date} — chez leur mère'
+    cellThem: '{date} — chez l’autre parent'
   },
   share: {
     button: 'Copier le lien',
@@ -87,7 +87,7 @@ export default {
     week1: 'Semaine 1 — vous aviez {pair}',
     week2: 'Semaine 2 — tout s’inverse',
     you: 'Vous',
-    mother: 'Mère',
+    otherParent: 'Autre parent',
     note1Title: 'Les jours se comptent en nuits',
     note1Body: 'Une date appartient à celui qui a les enfants cette nuit-là. Un week-end du vendredi au dimanche se termine à la remise du lundi matin : ce lundi compte donc pour le parent dont la période commence.',
     note2Title: 'Les semaines commencent le lundi',

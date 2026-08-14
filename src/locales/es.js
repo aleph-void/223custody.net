@@ -27,7 +27,7 @@ export default {
   choice: {
     pair: '{a} y {b}',
     montueSub: 'Este fin de semana también es tuyo: del viernes al lunes por la mañana.',
-    wedthuSub: 'Este fin de semana es de su madre: del viernes al lunes por la mañana.'
+    wedthuSub: 'Este fin de semana es del otro progenitor: del viernes al lunes por la mañana.'
   },
   step2: {
     num: 'Paso 2',
@@ -49,27 +49,27 @@ export default {
     yes: 'Sí',
     no: 'No',
     withYou: 'Esa noche los niños están contigo.',
-    withThem: 'Esa noche los niños están con su madre.',
+    withThem: 'Esa noche los niños están con el otro progenitor.',
     stretchLabel: 'Este bloque',
     cycleLabel: 'Posición en el ciclo',
     nextLabel: 'Próximo cambio',
     range: '{from} → {to}',
     stretchYou: 'Contigo: {span} ({nights})',
-    stretchThem: 'Con su madre: {span} ({nights})',
+    stretchThem: 'Con el otro progenitor: {span} ({nights})',
     nights: {
       one: '{n} noche',
       other: '{n} noches'
     },
     cycle: 'Día {day} de 14 — semana {week}, {weekday}',
-    nextToThem: '{date} por la mañana: pasan con su madre',
+    nextToThem: '{date} por la mañana: pasan con el otro progenitor',
     nextToYou: '{date} por la mañana: pasan contigo',
     prevMonth: 'Mes anterior',
     nextMonth: 'Mes siguiente',
     legendYou: 'Contigo',
-    legendThem: 'Con su madre',
+    legendThem: 'Con el otro progenitor',
     legendTarget: 'Fecha consultada',
     cellYou: '{date}: contigo',
-    cellThem: '{date}: con su madre'
+    cellThem: '{date}: con el otro progenitor'
   },
   share: {
     button: 'Copiar enlace',
@@ -86,7 +86,7 @@ export default {
     week1: 'Semana 1: tuviste {pair}',
     week2: 'Semana 2: todo se invierte',
     you: 'Tú',
-    mother: 'Madre',
+    otherParent: 'Otro progenitor',
     note1Title: 'Los días se cuentan por noches',
     note1Body: 'Una fecha pertenece a quien tiene a los niños esa noche. Un fin de semana de viernes a domingo termina en la entrega del lunes por la mañana, así que ese lunes cuenta para el progenitor que inicia el bloque.',
     note2Title: 'Las semanas empiezan el lunes',

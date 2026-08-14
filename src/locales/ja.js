@@ -27,7 +27,7 @@ export default {
   choice: {
     pair: '{a}・{b}',
     montueSub: '今週末も自分の担当です（金曜から月曜の朝まで）。',
-    wedthuSub: '今週末は母親の担当です（金曜から月曜の朝まで）。'
+    wedthuSub: '今週末はもう一人の親の担当です（金曜から月曜の朝まで）。'
   },
   step2: {
     num: 'ステップ 2',
@@ -49,26 +49,26 @@ export default {
     yes: 'はい',
     no: 'いいえ',
     withYou: 'その夜、子どもは自分のところにいます。',
-    withThem: 'その夜、子どもは母親のところにいます。',
+    withThem: 'その夜、子どもはもう一人の親のところにいます。',
     stretchLabel: 'この期間',
     cycleLabel: '周期上の位置',
     nextLabel: '次の引き渡し',
     range: '{from} → {to}',
     stretchYou: '自分のところ：{span}（{nights}）',
-    stretchThem: '母親のところ：{span}（{nights}）',
+    stretchThem: 'もう一人の親のところ：{span}（{nights}）',
     nights: {
       other: '{n}泊'
     },
     cycle: '14日中 {day} 日目 — 第 {week} 週、{weekday}',
-    nextToThem: '{date}の朝 — 母親のところへ',
+    nextToThem: '{date}の朝 — もう一人の親のところへ',
     nextToYou: '{date}の朝 — 自分のところへ',
     prevMonth: '前の月',
     nextMonth: '次の月',
     legendYou: '自分のところ',
-    legendThem: '母親のところ',
+    legendThem: 'もう一人の親のところ',
     legendTarget: '調べた日付',
     cellYou: '{date} — 自分のところ',
-    cellThem: '{date} — 母親のところ'
+    cellThem: '{date} — もう一人の親のところ'
   },
   share: {
     button: '共有リンクをコピー',
@@ -85,7 +85,7 @@ export default {
     week1: '第1週 — 担当は {pair}',
     week2: '第2週 — すべて入れ替わる',
     you: '自分',
-    mother: '母親',
+    otherParent: 'もう一人の親',
     note1Title: '日数は宿泊で数える',
     note1Body: 'ある日付は、その夜に子どもと過ごす側のものです。金曜から日曜の週末は月曜の朝の引き渡しで終わるため、その月曜は次の期間を始める側に数えます。',
     note2Title: '週は月曜から始まる',

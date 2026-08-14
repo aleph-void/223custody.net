@@ -27,7 +27,7 @@ export default {
   choice: {
     pair: '{a}·{b}',
     montueSub: '이번 주말도 내 차례입니다 — 금요일부터 월요일 아침까지.',
-    wedthuSub: '이번 주말은 아이 엄마 차례입니다 — 금요일부터 월요일 아침까지.'
+    wedthuSub: '이번 주말은 다른 부모 차례입니다 — 금요일부터 월요일 아침까지.'
   },
   step2: {
     num: '2단계',
@@ -49,26 +49,26 @@ export default {
     yes: '예',
     no: '아니요',
     withYou: '그날 밤 아이들은 나와 함께 있습니다.',
-    withThem: '그날 밤 아이들은 엄마와 함께 있습니다.',
+    withThem: '그날 밤 아이들은 다른 부모와 함께 있습니다.',
     stretchLabel: '이번 구간',
     cycleLabel: '주기 위치',
     nextLabel: '다음 인계',
     range: '{from} → {to}',
     stretchYou: '내 차례: {span} ({nights})',
-    stretchThem: '엄마 차례: {span} ({nights})',
+    stretchThem: '다른 부모 차례: {span} ({nights})',
     nights: {
       other: '{n}박'
     },
     cycle: '14일 중 {day}일째 — {week}주 차, {weekday}',
-    nextToThem: '{date} 아침 — 엄마에게 갑니다',
+    nextToThem: '{date} 아침 — 다른 부모에게 갑니다',
     nextToYou: '{date} 아침 — 나에게 옵니다',
     prevMonth: '이전 달',
     nextMonth: '다음 달',
     legendYou: '나와 함께',
-    legendThem: '엄마와 함께',
+    legendThem: '다른 부모와 함께',
     legendTarget: '확인한 날짜',
     cellYou: '{date} — 나와 함께',
-    cellThem: '{date} — 엄마와 함께'
+    cellThem: '{date} — 다른 부모와 함께'
   },
   share: {
     button: '공유 링크 복사',
@@ -85,7 +85,7 @@ export default {
     week1: '1주 차 — 내 차례는 {pair}',
     week2: '2주 차 — 모두 뒤바뀝니다',
     you: '나',
-    mother: '엄마',
+    otherParent: '다른 부모',
     note1Title: '날짜는 숙박 기준으로 셉니다',
     note1Body: '어떤 날짜든 그날 밤 아이들과 함께 있는 쪽의 몫입니다. 금요일부터 일요일까지의 주말은 월요일 아침 인계로 끝나므로, 그 월요일은 다음 구간을 시작하는 쪽으로 계산됩니다.',
     note2Title: '주는 월요일에 시작합니다',

@@ -184,7 +184,7 @@
           <span class="cycle-label">{{ week.label }}</span>
           <div class="cycle-days">
             <span v-for="(d, i) in week.days" :key="i" class="cd" :class="{ on: d.you }">
-              <em>{{ d.name }}</em>{{ d.you ? $t('how.you') : $t('how.mother') }}
+              <em>{{ d.name }}</em>{{ d.you ? $t('how.you') : $t('how.otherParent') }}
             </span>
           </div>
         </div>

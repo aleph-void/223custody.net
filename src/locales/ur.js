@@ -27,7 +27,7 @@ export default {
   choice: {
     pair: '{a} اور {b}',
     montueSub: 'یہ ویک اینڈ بھی آپ کا ہے — جمعہ سے پیر کی صبح تک۔',
-    wedthuSub: 'یہ ویک اینڈ اُن کی والدہ کا ہے — جمعہ سے پیر کی صبح تک۔'
+    wedthuSub: 'یہ ویک اینڈ دوسرے والدین کا ہے — جمعہ سے پیر کی صبح تک۔'
   },
   step2: {
     num: 'مرحلہ 2',
@@ -49,27 +49,27 @@ export default {
     yes: 'ہاں',
     no: 'نہیں',
     withYou: 'اُس رات بچے آپ کے پاس ہیں۔',
-    withThem: 'اُس رات بچے اپنی والدہ کے پاس ہیں۔',
+    withThem: 'اُس رات بچے دوسرے والدین کے پاس ہیں۔',
     stretchLabel: 'یہ دورانیہ',
     cycleLabel: 'چکر میں مقام',
     nextLabel: 'اگلی تبدیلی',
     range: '{from} – {to}',
     stretchYou: 'آپ کے پاس: {span} ({nights})',
-    stretchThem: 'والدہ کے پاس: {span} ({nights})',
+    stretchThem: 'دوسرے والدین کے پاس: {span} ({nights})',
     nights: {
       one: '{n} رات',
       other: '{n} راتیں'
     },
     cycle: '14 میں سے دن {day} — ہفتہ {week}، {weekday}',
-    nextToThem: '{date} کی صبح — وہ والدہ کے پاس جاتے ہیں',
+    nextToThem: '{date} کی صبح — وہ دوسرے والدین کے پاس جاتے ہیں',
     nextToYou: '{date} کی صبح — وہ آپ کے پاس آتے ہیں',
     prevMonth: 'پچھلا مہینہ',
     nextMonth: 'اگلا مہینہ',
     legendYou: 'آپ کے پاس',
-    legendThem: 'والدہ کے پاس',
+    legendThem: 'دوسرے والدین کے پاس',
     legendTarget: 'دیکھی گئی تاریخ',
     cellYou: '{date} — آپ کے پاس',
-    cellThem: '{date} — والدہ کے پاس'
+    cellThem: '{date} — دوسرے والدین کے پاس'
   },
   share: {
     button: 'لنک کاپی کریں',
@@ -86,7 +86,7 @@ export default {
     week1: 'ہفتہ 1 — آپ کے پاس تھے {pair}',
     week2: 'ہفتہ 2 — سب کچھ اُلٹ جاتا ہے',
     you: 'آپ',
-    mother: 'والدہ',
+    otherParent: 'دوسرے والدین',
     note1Title: 'دن راتوں کے حساب سے گنے جاتے ہیں',
     note1Body: 'کوئی تاریخ اُسی کی ہوتی ہے جس کے پاس بچے اُس رات ٹھہرتے ہیں۔ جمعہ سے اتوار کا ویک اینڈ پیر کی صبح واپسی پر ختم ہوتا ہے، اس لیے وہ پیر اُس والد یا والدہ کے کھاتے میں جاتا ہے جس کا دورانیہ شروع ہو رہا ہو۔',
     note2Title: 'ہفتہ پیر سے شروع ہوتا ہے',

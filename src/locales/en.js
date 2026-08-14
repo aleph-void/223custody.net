@@ -29,7 +29,7 @@ export default {
   choice: {
     pair: '{a} & {b}',
     montueSub: 'You also have this weekend — Friday through Monday morning.',
-    wedthuSub: 'Their mother has this weekend — Friday through Monday morning.'
+    wedthuSub: 'The other parent has this weekend — Friday through Monday morning.'
   },
   step2: {
     num: 'Step 2',
@@ -51,27 +51,27 @@ export default {
     yes: 'Yes',
     no: 'No',
     withYou: 'The kids are with you that night.',
-    withThem: 'The kids are with their mother that night.',
+    withThem: 'The kids are with the other parent that night.',
     stretchLabel: 'This stretch',
     cycleLabel: 'Cycle position',
     nextLabel: 'Next changeover',
     range: '{from} → {to}',
     stretchYou: 'Yours: {span} ({nights})',
-    stretchThem: 'Hers: {span} ({nights})',
+    stretchThem: 'Other parent: {span} ({nights})',
     nights: {
       one: '{n} night',
       other: '{n} nights'
     },
     cycle: 'Day {day} of 14 — week {week}, {weekday}',
-    nextToThem: '{date} morning — they go to their mother',
+    nextToThem: '{date} morning — they go to the other parent',
     nextToYou: '{date} morning — they come to you',
     prevMonth: 'Previous month',
     nextMonth: 'Next month',
     legendYou: 'With you',
-    legendThem: 'With their mother',
+    legendThem: 'With the other parent',
     legendTarget: 'Date you checked',
     cellYou: '{date} — with you',
-    cellThem: '{date} — with their mother'
+    cellThem: '{date} — with the other parent'
   },
   share: {
     button: 'Copy share link',
@@ -88,7 +88,7 @@ export default {
     week1: 'Week 1 — you had {pair}',
     week2: 'Week 2 — everything flips',
     you: 'You',
-    mother: 'Mother',
+    otherParent: 'Other Parent',
     note1Title: 'Days are counted as overnights',
     note1Body: 'A date belongs to whoever has the kids that night. A Friday–Sunday weekend ends at Monday morning drop-off, so that Monday counts for the parent whose block starts it.',
     note2Title: 'Weeks start on Monday',

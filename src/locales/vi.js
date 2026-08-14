@@ -27,7 +27,7 @@ export default {
   choice: {
     pair: '{a} và {b}',
     montueSub: 'Cuối tuần này cũng là của bạn — từ thứ Sáu đến sáng thứ Hai.',
-    wedthuSub: 'Cuối tuần này thuộc về mẹ các con — từ thứ Sáu đến sáng thứ Hai.'
+    wedthuSub: 'Cuối tuần này thuộc về phụ huynh còn lại — từ thứ Sáu đến sáng thứ Hai.'
   },
   step2: {
     num: 'Bước 2',
@@ -49,26 +49,26 @@ export default {
     yes: 'Có',
     no: 'Không',
     withYou: 'Đêm đó các con ở với bạn.',
-    withThem: 'Đêm đó các con ở với mẹ.',
+    withThem: 'Đêm đó các con ở với phụ huynh còn lại.',
     stretchLabel: 'Đợt này',
     cycleLabel: 'Vị trí trong chu kỳ',
     nextLabel: 'Lần bàn giao tới',
     range: '{from} → {to}',
     stretchYou: 'Ở với bạn: {span} ({nights})',
-    stretchThem: 'Ở với mẹ: {span} ({nights})',
+    stretchThem: 'Ở với phụ huynh còn lại: {span} ({nights})',
     nights: {
       other: '{n} đêm'
     },
     cycle: 'Ngày {day}/14 — tuần {week}, {weekday}',
-    nextToThem: 'Sáng {date} — các con về với mẹ',
+    nextToThem: 'Sáng {date} — các con về với phụ huynh còn lại',
     nextToYou: 'Sáng {date} — các con về với bạn',
     prevMonth: 'Tháng trước',
     nextMonth: 'Tháng sau',
     legendYou: 'Ở với bạn',
-    legendThem: 'Ở với mẹ',
+    legendThem: 'Ở với phụ huynh còn lại',
     legendTarget: 'Ngày đã kiểm tra',
     cellYou: '{date} — ở với bạn',
-    cellThem: '{date} — ở với mẹ'
+    cellThem: '{date} — ở với phụ huynh còn lại'
   },
   share: {
     button: 'Sao chép liên kết',
@@ -85,7 +85,7 @@ export default {
     week1: 'Tuần 1 — bạn đón {pair}',
     week2: 'Tuần 2 — mọi thứ đảo lại',
     you: 'Bạn',
-    mother: 'Mẹ',
+    otherParent: 'Phụ huynh còn lại',
     note1Title: 'Ngày được tính theo đêm ngủ lại',
     note1Body: 'Một ngày thuộc về người có các con ngủ lại đêm đó. Cuối tuần từ thứ Sáu đến Chủ nhật kết thúc khi trả con vào sáng thứ Hai, nên thứ Hai đó được tính cho người mở đầu đợt tiếp theo.',
     note2Title: 'Tuần bắt đầu từ thứ Hai',

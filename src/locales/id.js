@@ -27,7 +27,7 @@ export default {
   choice: {
     pair: '{a} & {b}',
     montueSub: 'Akhir pekan ini juga milik Anda — Jumat sampai Senin pagi.',
-    wedthuSub: 'Akhir pekan ini milik ibu mereka — Jumat sampai Senin pagi.'
+    wedthuSub: 'Akhir pekan ini milik orang tua lainnya — Jumat sampai Senin pagi.'
   },
   step2: {
     num: 'Langkah 2',
@@ -49,26 +49,26 @@ export default {
     yes: 'Ya',
     no: 'Tidak',
     withYou: 'Malam itu anak-anak bersama Anda.',
-    withThem: 'Malam itu anak-anak bersama ibu mereka.',
+    withThem: 'Malam itu anak-anak bersama orang tua lainnya.',
     stretchLabel: 'Blok ini',
     cycleLabel: 'Posisi dalam siklus',
     nextLabel: 'Pergantian berikutnya',
     range: '{from} → {to}',
     stretchYou: 'Bersama Anda: {span} ({nights})',
-    stretchThem: 'Bersama ibu mereka: {span} ({nights})',
+    stretchThem: 'Bersama orang tua lainnya: {span} ({nights})',
     nights: {
       other: '{n} malam'
     },
     cycle: 'Hari ke-{day} dari 14 — minggu {week}, {weekday}',
-    nextToThem: '{date} pagi — mereka pindah ke ibu mereka',
+    nextToThem: '{date} pagi — mereka pindah ke orang tua lainnya',
     nextToYou: '{date} pagi — mereka pindah ke Anda',
     prevMonth: 'Bulan sebelumnya',
     nextMonth: 'Bulan berikutnya',
     legendYou: 'Bersama Anda',
-    legendThem: 'Bersama ibu mereka',
+    legendThem: 'Bersama orang tua lainnya',
     legendTarget: 'Tanggal yang dicek',
     cellYou: '{date} — bersama Anda',
-    cellThem: '{date} — bersama ibu mereka'
+    cellThem: '{date} — bersama orang tua lainnya'
   },
   share: {
     button: 'Salin tautan',
@@ -85,7 +85,7 @@ export default {
     week1: 'Minggu 1 — bagian Anda: {pair}',
     week2: 'Minggu 2 — semuanya bertukar',
     you: 'Anda',
-    mother: 'Ibu',
+    otherParent: 'Orang Tua Lain',
     note1Title: 'Hari dihitung sebagai malam menginap',
     note1Body: 'Sebuah tanggal menjadi milik siapa pun yang menemani anak-anak malam itu. Akhir pekan Jumat sampai Minggu berakhir saat pengantaran Senin pagi, jadi Senin itu dihitung untuk orang tua yang blok gilirannya dimulai.',
     note2Title: 'Minggu dimulai pada hari Senin',

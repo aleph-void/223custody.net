@@ -27,7 +27,7 @@ export default {
   choice: {
     pair: '{a} i {b}',
     montueSub: 'Ten weekend też jest twój — od piątku do poniedziałku rano.',
-    wedthuSub: 'Ten weekend należy do mamy — od piątku do poniedziałku rano.'
+    wedthuSub: 'Ten weekend należy do drugiego rodzica — od piątku do poniedziałku rano.'
   },
   step2: {
     num: 'Krok 2',
@@ -49,13 +49,13 @@ export default {
     yes: 'Tak',
     no: 'Nie',
     withYou: 'Tej nocy dzieci są u ciebie.',
-    withThem: 'Tej nocy dzieci są u mamy.',
+    withThem: 'Tej nocy dzieci są u drugiego rodzica.',
     stretchLabel: 'Ten blok',
     cycleLabel: 'Pozycja w cyklu',
     nextLabel: 'Najbliższa zmiana',
     range: '{from} → {to}',
     stretchYou: 'U ciebie: {span} ({nights})',
-    stretchThem: 'U mamy: {span} ({nights})',
+    stretchThem: 'U drugiego rodzica: {span} ({nights})',
     nights: {
       one: '{n} noc',
       few: '{n} noce',
@@ -63,15 +63,15 @@ export default {
       other: '{n} nocy'
     },
     cycle: 'Dzień {day} z 14 — tydzień {week}, {weekday}',
-    nextToThem: '{date} rano — jadą do mamy',
+    nextToThem: '{date} rano — jadą do drugiego rodzica',
     nextToYou: '{date} rano — przyjeżdżają do ciebie',
     prevMonth: 'Poprzedni miesiąc',
     nextMonth: 'Następny miesiąc',
     legendYou: 'U ciebie',
-    legendThem: 'U mamy',
+    legendThem: 'U drugiego rodzica',
     legendTarget: 'Sprawdzana data',
     cellYou: '{date} — u ciebie',
-    cellThem: '{date} — u mamy'
+    cellThem: '{date} — u drugiego rodzica'
   },
   share: {
     button: 'Kopiuj link',
@@ -88,7 +88,7 @@ export default {
     week1: 'Tydzień 1 — miałeś {pair}',
     week2: 'Tydzień 2 — wszystko się odwraca',
     you: 'Ty',
-    mother: 'Mama',
+    otherParent: 'Drugi rodzic',
     note1Title: 'Dni liczone są jako noclegi',
     note1Body: 'Data należy do tego, u kogo dzieci śpią tej nocy. Weekend od piątku do niedzieli kończy się odwiezieniem w poniedziałek rano, więc ten poniedziałek liczy się rodzicowi, którego blok właśnie się zaczyna.',
     note2Title: 'Tydzień zaczyna się w poniedziałek',
