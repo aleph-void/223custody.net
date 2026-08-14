@@ -25,9 +25,33 @@
             <ellipse cx="12" cy="12" rx="4" ry="9" fill="none" stroke="currentColor" stroke-width="1.6"/>
             <path d="M3.2 9h17.6M3.2 15h17.6" stroke="currentColor" stroke-width="1.6" fill="none"/>
           </svg>
-          <select class="lang-select" v-model="locale" :aria-label="$t('nav.language')">
-            <option v-for="l in locales" :key="l.code" :value="l.code" :lang="l.tag">{{ l.flag }}&nbsp; {{ l.name }}</option>
-          </select>
+          <div class="lang-picker" ref="langPicker">
+            <button
+              type="button"
+              class="lang-select lang-trigger"
+              :aria-expanded="String(languageMenuOpen)"
+              :aria-controls="languageMenuOpen ? 'language-menu' : undefined"
+              :aria-label="$t('nav.language')"
+              @click="languageMenuOpen = !languageMenuOpen">
+              <span class="fi" :class="flagClass(selectedLocale.code)" aria-hidden="true"></span>
+              <span>{{ selectedLocale.name }}</span>
+              <span class="lang-chevron" aria-hidden="true">▾</span>
+            </button>
+            <div v-if="languageMenuOpen" id="language-menu" class="lang-menu" role="listbox" :aria-label="$t('nav.language')">
+              <button
+                v-for="l in locales"
+                :key="l.code"
+                type="button"
+                class="lang-option"
+                role="option"
+                :lang="l.tag"
+                :aria-selected="String(locale === l.code)"
+                @click="chooseLocale(l.code)">
+                <span class="fi" :class="flagClass(l.code)" aria-hidden="true"></span>
+                <span>{{ l.name }}</span>
+              </button>
+            </div>
+          </div>
         </label>
       </div>
     </div>
@@ -232,7 +256,7 @@
 </template>
 
 <script>
-import { ref, computed, watch, nextTick } from 'vue'
+import { ref, computed, watch, nextTick, onMounted, onBeforeUnmount } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { LOCALES, byCode, loadLocale, preferredLocale, STORE_LOCALE } from './locales/index.js'
 import {
@@ -247,6 +271,8 @@ export default {
     const { t, te, locale: activeLocale } = useI18n({ useScope: 'global' })
 
     const locale = ref('en')
+    const languageMenuOpen = ref(false)
+    const langPicker = ref(null)
     const pattern = ref(null)          // 'montue' | 'wedthu'
     const dateValue = ref(toInputValue(todayUTC()))
     const error = ref(null)
@@ -257,6 +283,30 @@ export default {
     const shareFeedback = ref(false)
     const fromShared = ref(false)
     const canShareNatively = typeof navigator !== 'undefined' && typeof navigator.share === 'function'
+
+    const flagCountries = {
+      en: 'us', zh: 'cn', hi: 'in', es: 'es', ar: 'sa', bn: 'bd', pt: 'br',
+      ru: 'ru', ja: 'jp', de: 'de', fr: 'fr', ur: 'pk', id: 'id', tr: 'tr',
+      it: 'it', ko: 'kr', vi: 'vn', fa: 'ir', pl: 'pl', nl: 'nl', th: 'th'
+    }
+
+    const selectedLocale = computed(() => byCode[locale.value])
+
+    function flagClass (code) {
+      return 'fi-' + flagCountries[code]
+    }
+
+    function chooseLocale (code) {
+      locale.value = code
+      languageMenuOpen.value = false
+    }
+
+    function closeLanguageMenu (event) {
+      if (langPicker.value && !langPicker.value.contains(event.target)) languageMenuOpen.value = false
+    }
+
+    onMounted(() => document.addEventListener('click', closeLanguageMenu))
+    onBeforeUnmount(() => document.removeEventListener('click', closeLanguageMenu))
 
     const tag = computed(() => byCode[locale.value].tag)
 
@@ -561,6 +611,11 @@ export default {
       year: new Date().getFullYear(),
       locales: LOCALES,
       locale,
+      selectedLocale,
+      languageMenuOpen,
+      langPicker,
+      flagClass,
+      chooseLocale,
       pattern,
       patterns,
       jumps,

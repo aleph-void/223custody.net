@@ -105,10 +105,10 @@ Persian, Polish, Dutch, and Thai.
 
 - **No English is left in the markup.** Every user-visible string lives in
   `src/locales/en.js`; the other files mirror its key set exactly.
-- The picker in the nav lists each language by its own name with an emoji
+- The picker in the nav lists each language by its own name with a bundled SVG
   flag. Flags map countries, not languages, so the native name is what
-  actually identifies each entry; on Windows, whose emoji font carries no flag
-  glyphs, they render as two-letter country codes instead.
+  actually identifies each entry. Only the 21 flags used by the picker are
+  included in the bundle.
 - The initial language comes from `navigator.languages`, and the picker
   choice is remembered in `localStorage`.
 - Only English is loaded up front; the rest arrive as lazy webpack chunks when

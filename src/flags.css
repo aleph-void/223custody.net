@@ -1,0 +1,33 @@
+/* The app uses these 21 locale flags; keep the full flag-icons package out of
+ * the bundle so unused country SVGs are not emitted. */
+.fi {
+  display: inline-block;
+  width: 1.333333em;
+  line-height: 1em;
+  aspect-ratio: 4 / 3;
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.fi:before { content: "\00a0"; }
+.fi-us { background-image: url('flag-icons/flags/4x3/us.svg'); }
+.fi-cn { background-image: url('flag-icons/flags/4x3/cn.svg'); }
+.fi-in { background-image: url('flag-icons/flags/4x3/in.svg'); }
+.fi-es { background-image: url('flag-icons/flags/4x3/es.svg'); }
+.fi-sa { background-image: url('flag-icons/flags/4x3/sa.svg'); }
+.fi-bd { background-image: url('flag-icons/flags/4x3/bd.svg'); }
+.fi-br { background-image: url('flag-icons/flags/4x3/br.svg'); }
+.fi-ru { background-image: url('flag-icons/flags/4x3/ru.svg'); }
+.fi-jp { background-image: url('flag-icons/flags/4x3/jp.svg'); }
+.fi-de { background-image: url('flag-icons/flags/4x3/de.svg'); }
+.fi-fr { background-image: url('flag-icons/flags/4x3/fr.svg'); }
+.fi-pk { background-image: url('flag-icons/flags/4x3/pk.svg'); }
+.fi-id { background-image: url('flag-icons/flags/4x3/id.svg'); }
+.fi-tr { background-image: url('flag-icons/flags/4x3/tr.svg'); }
+.fi-it { background-image: url('flag-icons/flags/4x3/it.svg'); }
+.fi-kr { background-image: url('flag-icons/flags/4x3/kr.svg'); }
+.fi-vn { background-image: url('flag-icons/flags/4x3/vn.svg'); }
+.fi-ir { background-image: url('flag-icons/flags/4x3/ir.svg'); }
+.fi-pl { background-image: url('flag-icons/flags/4x3/pl.svg'); }
+.fi-nl { background-image: url('flag-icons/flags/4x3/nl.svg'); }
+.fi-th { background-image: url('flag-icons/flags/4x3/th.svg'); }

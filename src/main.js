@@ -3,6 +3,7 @@ import { createI18n } from 'vue-i18n'
 import App from './App.vue'
 import { messages, registerI18n } from './locales/index.js'
 import './styles.css'
+import './flags.css'
 
 const i18n = createI18n({
   legacy: false,

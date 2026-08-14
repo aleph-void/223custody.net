@@ -18,6 +18,7 @@
     "prebuild": "npm run check"
   },
   "dependencies": {
+    "flag-icons": "^7.5.0",
     "vue": "^3.5.13",
     "vue-i18n": "^11.4.8"
   },
