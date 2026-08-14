@@ -1,4 +1,7 @@
-const CACHE_NAME = '223-calendar-v1'
+const CACHE_NAME = '223-calendar-v2'
+const LOCALE_ASSETS = [
+  /* __LOCALE_ASSETS__ */
+]
 const APP_SHELL = [
   './',
   './index.html',
@@ -8,7 +11,8 @@ const APP_SHELL = [
   './assets/favicon.svg',
   './assets/icon-180.png',
   './assets/icon-192.png',
-  './assets/icon-512.png'
+  './assets/icon-512.png',
+  ...LOCALE_ASSETS
 ]
 
 self.addEventListener('install', (event) => {

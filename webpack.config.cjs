@@ -5,6 +5,25 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
+class LocaleServiceWorkerPlugin {
+  apply (compiler) {
+    compiler.hooks.thisCompilation.tap('LocaleServiceWorkerPlugin', compilation => {
+      compilation.hooks.processAssets.tap({
+        name: 'LocaleServiceWorkerPlugin',
+        stage: webpack.Compilation.PROCESS_ASSETS_STAGE_REPORT
+      }, () => {
+        const offlineAssets = compilation.getAssets()
+          .map(asset => asset.name)
+          .filter(name => /^js[\\/]locale-.*\.js$/.test(name) || /^[^/\\]+\.svg$/.test(name))
+          .sort()
+        const source = require('fs').readFileSync(path.resolve(__dirname, 'public/sw.js'), 'utf8')
+          .replace('/* __LOCALE_ASSETS__ */', offlineAssets.map(name => JSON.stringify(`./${name}`)).join(',\n  '))
+        compilation.emitAsset('sw.js', new webpack.sources.RawSource(source))
+      })
+    })
+  }
+}
+
 module.exports = (env, argv) => {
   const isProd = argv.mode === 'production'
 
@@ -72,13 +91,14 @@ module.exports = (env, argv) => {
           {
             from: 'public',
             to: '.',
-            globOptions: { ignore: ['**/index.html'] },   // that one goes through HtmlWebpackPlugin
+            globOptions: { ignore: ['**/index.html', '**/sw.js'] }, // generated below
             noErrorOnMissing: false
           },
           // GitHub Pages would otherwise run the output through Jekyll.
           { from: 'public/CNAME', to: 'CNAME', toType: 'file' }
         ]
-      })
+      }),
+      new LocaleServiceWorkerPlugin()
     ],
     optimization: {
       splitChunks: {
