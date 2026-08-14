@@ -1,0 +1,101 @@
+/* Bahasa Indonesia */
+export default {
+  meta: {
+    tagline: 'Apakah anak-anak bersama saya hari itu?',
+    description: 'Alat mungil yang berjalan sepenuhnya di peramban untuk jadwal pengasuhan 2-2-3. Pilih dua hari yang menjadi bagian Anda minggu ini, tentukan tanggal mana pun, dan alat ini memberi tahu apakah anak-anak bersama Anda.'
+  },
+  nav: {
+    check: 'Cek tanggal',
+    how: 'Cara kerjanya',
+    alephvoid: 'Aleph Void',
+    language: 'Bahasa'
+  },
+  hero: {
+    badge: 'Jadwal pengasuhan 2-2-3',
+    title: 'Apakah anak-anak bersama saya {accent}',
+    titleAccent: 'hari itu?',
+    subtitle: 'Rotasi 2-2-3 adalah siklus 14 hari, sehingga tanggal yang lebih dari seminggu ke depan jadi tebak-tebakan. Pilih dua hari kerja yang menjadi bagian Anda minggu ini, tentukan tanggal, dan dapatkan jawabannya.',
+    claim: '{strong} Tanpa akun, tanpa server, tidak ada data yang meninggalkan peramban Anda — bisa dibuka bahkan di pesawat.',
+    claimStrong: 'Sepenuhnya berjalan di peramban.'
+  },
+  step1: {
+    num: 'Langkah 1',
+    title: 'Dua hari kerja mana anak-anak bersama Anda minggu ini?',
+    note: '“Minggu ini” berarti minggu yang dimulai {date}. Pilih pasangan yang sesuai — sisa siklusnya dihitung sendiri oleh alat ini.',
+    group: 'Dua hari kerja saat anak-anak bersama Anda minggu ini'
+  },
+  choice: {
+    pair: '{a} & {b}',
+    montueSub: 'Akhir pekan ini juga milik Anda — Jumat sampai Senin pagi.',
+    wedthuSub: 'Akhir pekan ini milik ibu mereka — Jumat sampai Senin pagi.'
+  },
+  step2: {
+    num: 'Langkah 2',
+    title: 'Pilih tanggal yang ingin dicek',
+    dateLabel: 'Tanggal yang dicek',
+    check: 'Cek tanggal ini',
+    jump: 'Lompat ke',
+    today: 'Hari ini',
+    tomorrow: 'Besok',
+    plusWeek: '+1 minggu',
+    plus30: '+30 hari',
+    plus90: '+90 hari'
+  },
+  error: {
+    pattern: 'Pilih dulu salah satu dari dua opsi di langkah 1.',
+    date: 'Pilih tanggal yang ingin dicek.'
+  },
+  result: {
+    yes: 'Ya',
+    no: 'Tidak',
+    withYou: 'Malam itu anak-anak bersama Anda.',
+    withThem: 'Malam itu anak-anak bersama ibu mereka.',
+    stretchLabel: 'Blok ini',
+    cycleLabel: 'Posisi dalam siklus',
+    nextLabel: 'Pergantian berikutnya',
+    range: '{from} → {to}',
+    stretchYou: 'Bersama Anda: {span} ({nights})',
+    stretchThem: 'Bersama ibu mereka: {span} ({nights})',
+    nights: {
+      other: '{n} malam'
+    },
+    cycle: 'Hari ke-{day} dari 14 — minggu {week}, {weekday}',
+    nextToThem: '{date} pagi — mereka pindah ke ibu mereka',
+    nextToYou: '{date} pagi — mereka pindah ke Anda',
+    prevMonth: 'Bulan sebelumnya',
+    nextMonth: 'Bulan berikutnya',
+    legendYou: 'Bersama Anda',
+    legendThem: 'Bersama ibu mereka',
+    legendTarget: 'Tanggal yang dicek',
+    cellYou: '{date} — bersama Anda',
+    cellThem: '{date} — bersama ibu mereka'
+  },
+  share: {
+    button: 'Salin tautan',
+    native: 'Bagikan',
+    copied: 'Tautan disalin.',
+    label: 'Tautan berbagi',
+    hint: 'Tautan ini membawa jadwal dan tanggal tersebut, jadi siapa pun yang membukanya melihat jawaban yang sama.',
+    opened: 'Dibuka dari tautan yang dibagikan — jadwal di bawah berasal dari tautan itu, bukan dari pilihan Anda yang tersimpan.'
+  },
+  how: {
+    eyebrow: 'Polanya',
+    title: 'Satu siklus, empat belas hari',
+    lead: 'Setiap orang tua mendapat tujuh hari yang sama dari setiap empat belas hari. Minggu pertama adalah cermin minggu kedua — karena itu melihat satu minggu saja tidak pernah cukup.',
+    week1: 'Minggu 1 — bagian Anda: {pair}',
+    week2: 'Minggu 2 — semuanya bertukar',
+    you: 'Anda',
+    mother: 'Ibu',
+    note1Title: 'Hari dihitung sebagai malam menginap',
+    note1Body: 'Sebuah tanggal menjadi milik siapa pun yang menemani anak-anak malam itu. Akhir pekan Jumat sampai Minggu berakhir saat pengantaran Senin pagi, jadi Senin itu dihitung untuk orang tua yang blok gilirannya dimulai.',
+    note2Title: 'Minggu dimulai pada hari Senin',
+    note2Body: 'Langkah 1 menanyakan minggu Senin–Minggu yang sedang Anda jalani. Kalau hari ini Minggu, itu tetap minggu yang dimulai enam hari lalu.',
+    note3Title: 'Hari libur tidak diperhitungkan',
+    note3Body: 'Ini hanya rotasi polos. Pertukaran hari raya, minggu liburan, dan kesepakatan sesekali dalam rencana pengasuhan Anda mengalahkan apa pun yang tertera di sini.'
+  },
+  footer: {
+    home: 'Beranda',
+    link: 'Aleph Void LLC',
+    copy: 'Dibuat oleh {link}. © {year} {brand}. Berjalan sepenuhnya di peramban Anda; tidak ada yang diunggah. Bukan nasihat hukum — rencana pengasuhan Anda yang menentukan.'
+  }
+};

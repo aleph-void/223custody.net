@@ -1,0 +1,90 @@
+name: Deploy to gh-pages
+
+# Builds the webpack bundle and publishes dist/ to the gh-pages branch, which
+# GitHub Pages serves. Only build output is published — no sources, no
+# node_modules.
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+concurrency:
+  group: gh-pages
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the source branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check locales
+        run: npm run check
+
+      - name: Build
+        run: npm run build
+
+      - name: Verify the build output
+        run: |
+          set -euo pipefail
+          test -f dist/index.html
+          test -f dist/CNAME
+          test -f dist/robots.txt
+          test -f dist/sitemap.xml
+          test -f dist/assets/og-image.png
+          # One lazily-loaded chunk per non-English locale.
+          chunks=$(ls dist/js/locale-*.js | wc -l)
+          test "$chunks" -eq 20 || { echo "expected 20 locale chunks, found $chunks"; exit 1; }
+          grep -q '<div id="app">' dist/index.html
+          grep -q 'og:image' dist/index.html
+          echo "dist looks publishable ($chunks locale chunks)"
+
+      - name: Publish to gh-pages
+        run: |
+          set -euo pipefail
+          SHA="$(git rev-parse --short HEAD)"
+
+          # Pages would otherwise run the tree through Jekyll and drop files
+          # it considers special.
+          touch dist/.nojekyll
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Keep gh-pages history if it exists; start it if it does not.
+          if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
+            git fetch origin gh-pages
+            git worktree add /tmp/pages gh-pages
+          else
+            git worktree add --detach /tmp/pages
+            git -C /tmp/pages checkout --orphan gh-pages
+            git -C /tmp/pages rm -rq --cached . || true
+          fi
+
+          find /tmp/pages -maxdepth 1 ! -name pages ! -name .git -exec rm -rf {} +
+          cp -r dist/. /tmp/pages/
+
+          cd /tmp/pages
+          git add -A
+          if git diff --cached --quiet; then
+            echo "gh-pages already matches $SHA; nothing to publish."
+            exit 0
+          fi
+          git commit -m "Deploy $SHA"
+          git push origin gh-pages

@@ -1,0 +1,39 @@
+{
+  "name": "223-calendar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Works out whether the kids are with you on any date under a 2-2-3 custody rotation. Runs entirely in the browser.",
+  "homepage": "https://223custody.net/",
+  "license": "MIT",
+  "author": "Aleph Void LLC (https://alephvoid.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleph-void/223custody.net.git"
+  },
+  "scripts": {
+    "dev": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "check": "node scripts/check-locales.mjs",
+    "prebuild": "npm run check"
+  },
+  "dependencies": {
+    "vue": "^3.5.13",
+    "vue-i18n": "^11.4.8"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "style-loader": "^4.0.0",
+    "vue-loader": "^17.4.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "browserslist": [
+    "defaults",
+    "not dead"
+  ]
+}
