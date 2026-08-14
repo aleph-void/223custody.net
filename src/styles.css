@@ -602,7 +602,8 @@ a:hover { color: #a78bfa; }
 .cal-title {
   font-size: 1.05rem;
   font-weight: 600;
-  min-width: 190px;
+  min-width: 0;
+  flex: 1 1 auto;
   text-align: center;
 }
 .cal-nav {
@@ -865,7 +866,11 @@ a:hover { color: #a78bfa; }
   .result-date { font-size: 1.15rem; }
   .date-row .btn { flex: 1 1 100%; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
-  .cal-cell { font-size: .78rem; }
+  .cal-cell {
+    aspect-ratio: 1;
+    min-height: 0;
+    font-size: .78rem;
+  }
   .cal-dows, .cal-grid { gap: 4px; }
 }
 
