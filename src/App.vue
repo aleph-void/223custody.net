@@ -102,6 +102,7 @@
             :aria-checked="String(pattern === opt.key)"
             @click="selectPattern(opt.key)">
             <span class="choice-days">{{ opt.label }}</span>
+            <span class="choice-dates">{{ opt.dates }}</span>
             <span class="choice-sub">{{ $t(opt.sub) }}</span>
             <span class="choice-strip" aria-hidden="true">
               <em v-for="(d, i) in narrowDays" :key="i" :class="{ on: opt.days.includes(i) }">{{ d }}</em>
@@ -336,6 +337,14 @@ export default {
       return t('choice.pair', { a: shortDays.value[a], b: shortDays.value[b] })
     }
 
+    // The actual dates of weekdays a and b in the current Mon–Sun week, so the
+    // Step 1 buttons read "Mon & Tue" / "Oct 5 & Oct 6" rather than bare names.
+    function pairDates (a, b) {
+      const monday = mondayOf(todayUTC())
+      const day = (i) => fmt(monday + i * MS_DAY, { month: 'short', day: 'numeric' })
+      return t('choice.pair', { a: day(a), b: day(b) })
+    }
+
     // CLDR plural category, so "3 nights" inflects correctly per language.
     function nights (n) {
       let cat = 'other'
@@ -352,8 +361,8 @@ export default {
     const thisMondayLabel = computed(() => fmt(mondayOf(todayUTC()), { month: 'long', day: 'numeric' }))
 
     const patterns = computed(() => [
-      { key: 'montue', label: pair(0, 1), sub: 'choice.montueSub', days: [0, 1] },
-      { key: 'wedthu', label: pair(2, 3), sub: 'choice.wedthuSub', days: [2, 3] }
+      { key: 'montue', label: pair(0, 1), dates: pairDates(0, 1), sub: 'choice.montueSub', days: [0, 1] },
+      { key: 'wedthu', label: pair(2, 3), dates: pairDates(2, 3), sub: 'choice.wedthuSub', days: [2, 3] }
     ])
 
     const jumps = [
