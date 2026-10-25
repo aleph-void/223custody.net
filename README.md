@@ -1,5 +1,7 @@
 # 2-2-3 Calendar
 
+[![Sponsor Aleph Void](https://img.shields.io/badge/Sponsor-Aleph%20Void-EA4AAA?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/aleph-void)
+
 A single-page tool for answering one question about a 2-2-3 custody rotation:
 **do I have my kids on that date?**
 
